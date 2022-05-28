@@ -1,0 +1,30 @@
+{
+    "name": "tesseract.js-offline",
+    "version": "0.1.0",
+    "description": "An example to show how to use tesseract.js in offline mode",
+    "main": "index.js",
+    "scripts": {
+        "prestart": "browserify -t @sethvincent/dotenvify ./browser/scripts/main.js > ./browser/scripts/bundle.js",
+        "start": "http-server ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jeromewu/tesseract.js-offline.git"
+    },
+    "author": "Jerome Wu <jeromewus@gmail.com> (https://github.com/jeromewu)",
+    "license": "Apache 2.0",
+    "bugs": {
+        "url": "https://github.com/jeromewu/tesseract.js-offline/issues"
+    },
+    "homepage": "https://github.com/jeromewu/tesseract.js-offline#readme",
+    "dependencies": {
+        "deepl": "^1.0.13",
+        "paste-image": "^0.0.3",
+        "tesseract.js": "^2.0.0-beta.1",
+        "tesseract.js-core": "^2.0.0-beta.13"
+    },
+    "devDependencies": {
+        "@sethvincent/dotenvify": "^1.0.4",
+        "http-server": "14.1.0"
+    }
+}
